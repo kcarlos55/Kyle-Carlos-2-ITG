@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css"> 
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="form1">
+    <h2>Create a New Event</h2>
+    <form name="events" onsubmit="return valid()" method="POST">
+        <label>Event Type: <input type="text" name="type"></label><br><br>
+        <label>Event Title: <input type="text" name="title"></label><br><br>
+        <label>Event Dates: <input type="date" name="dates" onsubmit="datevalid"></label><br><br>
+        <label>Posting Date: <input type="date" name="postdate"></label><br><br>
+
+        <input type="checkbox" id="1" name="1" value="1">
+        <label for="1"> Is Registration Required?</label><br><br>
+
+        <input type="checkbox" id="2" name="2" value="2">
+        <label for="2"> Is this event associated with any Family Program?</label><br><br>
+
+        <input type="checkbox" id="3" name="3" value="3">
+        <label for="3"> Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br><br>
+
+        <input type="checkbox" id="4" name="4" value="4">
+        <label for="4"> Is There a Point of Contract?</label><br><br>
+
+        <input type="checkbox" id="5" name="5" value="5">
+        <label for="5"> Is There a Hostling Command Point of Contract?</label><br><br>
+
+        <br><input type="submit" value="Save" id="same" name="same" onsubmit= "valid()"/>
+        <button type="reset">Clear</button> 
+    </form>
+    </div>
+
+    
+</body>
+</html>
